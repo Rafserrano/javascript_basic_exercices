@@ -1,0 +1,14 @@
+/*
+Timer
+*/
+function timer(time) {
+    return new Promise((resolve, reject) => {
+        if (time === 0 || isFinite(time) === false) {
+            return reject(new Error("Bad timing"))
+        }
+        console.log("hello")
+        setTimeout(() => { return resolve("Good timing") }, 1000 * time)
+    })
+}
+timer(process.argv[2]).then((result) => { console.log(result) }).catch((err) => console.log(err));
+console.log("end!")
