@@ -1,0 +1,16 @@
+/*
+Indicar si un año es bisiesto.
+*/
+
+function esBisiesto(ano) {
+if((ano%100 != 0) && (ano%4 === 0) || (ano%400)) {
+    console.log ('Este {'ano'} es bisiesto');
+    return true;
+
+    } 
+else {
+    console.log ('Este {'ano'} no es bisiesto');
+    return false;
+    }  
+}
+esBisiesto();
