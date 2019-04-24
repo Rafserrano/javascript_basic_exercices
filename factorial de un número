@@ -1,0 +1,12 @@
+/*
+ * Escribe una función que calcule el factorial de un número. 
+ */
+function multiplicarNumeros (numero) {
+	let total = 1; 
+	for (i=1; i<=numero; i++) {
+		total = total * i; 
+	}
+    return total; 
+}
+let total = sumarNumeros(10);
+console.log(total);
