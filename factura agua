@@ -1,0 +1,33 @@
+/*
+* Una compañía de agua está implantando un nuevo sistema de cobro. Para cada vivienda se tiene en cuenta:*
+* Los primeros 50 litros son gratis
+* Entre 50 y 200 litros se cobra el libro a 0.1 EUR
+* A partir de 200 litros se cobra el litro a 0.3 EUR
+* El cobro mínimo son 10 EUR. Si los litros de agua a facturar son menor a 10 EUR, entonces la factura final será de 10 EUR.
+* Escribe un programa que calcule el gasto de agua en un mes dado la cantidad de litros gastada
+*/
+
+
+let litros = 0;
+let tarifa1 = 0.10;
+let tarifa2 = 0.3;
+let fijo = 0;
+
+function factura(litros) {
+ if (litros < 50) {
+  return parcial1 = 0;
+ }
+ else if (litros > 50 && litros < 200) {
+  return parcial2 = (litros - 50) * tarifa1;
+ }
+ else if (litros > 200) {
+  return parcial3 = 15 + (litros - 200) * tarifa2;
+ }
+ else if (totalfactura < 10) {
+  totalfactura = 10;
+ }
+ const totalFactura = parcial1 + parcial2 + parcial3;
+ return totalFactura
+ }
+const totalFactura = factura(500);
+console.log(totalFactura);
