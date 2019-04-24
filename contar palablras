@@ -1,0 +1,15 @@
+/*
+contar palablras de un string
+*/
+
+function wordCount (str) {
+    let texto = str.split(' ');
+    let palabras = 0;
+    for (let i = 0; i < texto.length; i += 1) {
+        palabras += 1;
+    }
+    return palabras;
+}
+
+const contarpalabras = wordCount("este estring está de muerte");
+console.log(contarpalabras);
