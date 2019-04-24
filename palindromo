@@ -1,0 +1,12 @@
+function palindromo(palabra) { 
+
+    for (let i = palabra.length; i > 0; i-- ) {
+    
+    if ( palabra[i] = palabra.charAt(palabra.length) - 1) {
+        return true;
+  } else {
+        return false;
+        }
+    }
+}
+palindromo();
