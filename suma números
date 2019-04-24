@@ -1,0 +1,13 @@
+/*
+Función que acepte como parámetro un número entero N y calcule 1 + 2 + 3 + ... + N
+ */	
+
+function sumarNumeros (numero) {
+	let total = 1; 
+	for (i=1; i<=numero; i++) {
+		total = total + i; 
+	}
+    return total; 
+}
+let total = sumarNumeros(10);
+console.log(total);
