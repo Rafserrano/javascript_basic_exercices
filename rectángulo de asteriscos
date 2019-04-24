@@ -1,0 +1,18 @@
+/*
+Haz una función que reciba dos parámetros, un número de filas y un número de columnas y dibuje:
+
+* * * * *
+* * * * *
+* * * * *
+*/
+
+function tablaAsteriscos(a, b) {
+  for (let i = 0; i < a; i++) {
+  const arr = [];
+  for (let j = 0; j < b; j++) {
+  arr.push('*');
+  }
+  console.log(arr.join(' '));
+  }
+}
+tablaAsteriscos(3, 5);
