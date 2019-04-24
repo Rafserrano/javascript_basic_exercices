@@ -1,0 +1,15 @@
+/*
+Pasar tiempo a horas y minutos
+*/
+    
+    function convertirHorasMinutos (tiempo) {
+        let num = tiempo;
+        let horas = (num/60);
+        let restoHoras = Math.floor(horas);
+        let minutos = (horas - restoHoras) * 60;
+        let restoMinutos = Math.floor(minutos);
+
+        return tiempo + "minutos =" + restoHoras + " hora/s " + restoMinutos + " minuto/s."
+    }
+    const tiempo = convertirHorasMinutos(200);
+    console.log(tiempo);
