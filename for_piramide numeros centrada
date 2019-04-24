@@ -1,0 +1,28 @@
+'use strict';
+
+/**
+ * Make a piramid similar to:
+ *      1
+ *     1 2
+ *    1 2 3
+ *   1 2 3 4
+ *  1 2 3 4 5
+ * Where the number of rows is a variable between 1 and 25
+ */
+const rows = 25;
+
+for (let i = 0; i < rows; i ++) {
+  const rowOutput = new Array(rows);
+  for (let j = 0; j < i + 1; j ++) {
+    /**
+     * Add spaces till the middle
+     */
+    rowOutput.fill(' ', 0, ((rows - i - 1) / 2));
+
+    /**
+     * calculate the value
+     */
+    rowOutput.push(j + 1);
+  }
+
+  console.log(rowOutput.join(' '));
