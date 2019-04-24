@@ -1,0 +1,21 @@
+'use strict';
+
+/**
+ * Make a piramid like:
+ * 1 2 3 4 5
+ * 1 2 3 4
+ * 1 2 3
+ * 1 2
+ * 1
+ * Where the number of rows is a variable
+ */
+
+const rows = 10;
+
+for (let i = 0; i < rows; i ++) {
+  const rowOutput = [];
+  for (let j = rows - i - 1; j > -1; j --) {
+    rowOutput.push(j + 1);
+  }
+
+  console.log(rowOutput.join(' '));
