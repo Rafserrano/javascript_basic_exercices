@@ -1,0 +1,16 @@
+// Contar vocales de un string
+
+  function vowelCount(str) {
+    let listadoVocales = "aeiouAEIOU";
+    let numeroVocales = 0;
+    
+    for (let i = 0; i < str.length; i++) {
+
+    if (listadoVocales.indexOf(str[i]) !== -1) {
+        numeroVocales += 1;
+    }
+}
+    return numeroVocales;
+}
+const contarvocales = vowelCount("comoestanustedes");
+console.log(contarvocales);
