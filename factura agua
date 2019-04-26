@@ -8,10 +8,9 @@
 */
 
 
-let litros = 0;
-let tarifa1 = 0.10;
-let tarifa2 = 0.3;
-let fijo = 0;
+const litros = 0;
+const tarifa1 = 0.10;
+const tarifa2 = 0.3;
 
 function factura(litros) {
  if (litros < 50) {
