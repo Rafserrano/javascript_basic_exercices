@@ -9,7 +9,7 @@
 
 
 const litros = 0;
-const tarifa1 = 0.10;
+const tarifa1 = 0.1;
 const tarifa2 = 0.3;
 
 function factura(litros) {
